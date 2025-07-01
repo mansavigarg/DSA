@@ -17,12 +17,12 @@ void printFirstNegative(int *arr, int n, int k){
     for(int index = k; index < n; index++){
         // aage badhne se phele purani window ka ans nikal do
             if(dq.empty()){
-                cout << "0 " << endl;
+                cout << "0 ";
             }else{
                 cout << arr[dq.front()] << " ";
             }
         // Removal -> jo bi index out of range hai usko queue mein se remove kr do
-            if(index - dq.front() >= k){
+            if(!dq.empty() && index - dq.front() >= k){
                 // out of range wala element hai
                 dq.pop_front();
             }

@@ -31,6 +31,4 @@
 *.out
 *.app
 
-*.*
-
 # End of https://mrkandreev.name/snippets/gitignore-generator/#C++
